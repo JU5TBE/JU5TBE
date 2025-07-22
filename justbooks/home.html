@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,
  initial-scale=1.0"/>
-<title>JustCode</title>
-
+<title>Home</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 <link href='https://unpkg.com/boxicons@2.1.3/
  css/boxicons.min.css' rel='stylesheet'>
  <style>
@@ -22,13 +22,11 @@ body{
 .container{
 	
 	position: relative;
-	width: 100%;
-	height: 100%;
+	max-width: 100vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 100px;
-	background-color: #001f7c38;
 	
 }
 
@@ -51,34 +49,36 @@ header{
 	right: 0;
 	left: 0;
 	align-items: center;
-	justify-content:space-between;
+	justify-content: space-between;
 	width: 97%;
 	height: 70px;
 	background-color:  rgba(255, 255, 255, 0.123);
 	backdrop-filter: blur(10px);
 	padding: 0 30px;
-	box-shadow: 0 0 15px #72a1de68;
+	box-shadow: 0 0 5px #006eff68;
 	z-index: 999;	
 	
 }
 
-.left{
-	
+.left{	
 	display: flex;
 	align-items: center;
-	
+	max-width: 30%;	
 }
 
 .left img{
 	width: 40px;
-	margin: 0 5px;
-    border-radius: 20px;
+	margin: 5px;
+	margin-left: 20px;
+    	border-radius: 20px;
 }
+
+
 
 header ul{
 	
 	display: flex;
-	justify-content:space-between;
+	justify-content: center;
 	width: 30%;
 	padding: 15px 15px;
 	border-radius: 50px;
@@ -140,7 +140,7 @@ header ul a{
 
 	z-index: 1;
 	position: absolute;
-	top: 0;
+	top:clamp(0px, calc(55px - ((100vw - 400px) * 0.048)), 56px);
 	width: 100%;
 	justify-content:center;
 	mix-blend-mode: lighten;
@@ -179,7 +179,7 @@ header ul a{
 	background-color: #2200493d;
 	box-shadow: 0 0 5px #727fde88;
 	border-radius: 50px;
-    margin-top: 360px;
+   	margin-top: 360px;
 	
 }
 
@@ -191,7 +191,6 @@ header ul a{
 	line-height: 70px;
 	margin-top: 400px;
 	margin-bottom: 30px;
-	
 	
 }
 
@@ -343,47 +342,47 @@ header ul a{
 	border: 1px solid gray;
 	background-color: #080020b7;
 	border-radius:20px;
-    transition: 0.3s;
+    	transition: 0.3s;
 	
 }
 
 .card img{
-    width: 80%;
-    height: 50%;
-    object-fit: cover;
+    	width: 80%;
+    	height: 50%;
+    	object-fit: cover;
 }
 
 .card h1{
-    position: absolute;
-    margin: 0;
-    bottom: 40%;
-    left: 5%;
-    font-size: 25px;
-    z-index: lightgray;
+    	position: absolute;
+    	margin: 0;
+    	bottom: 40%;
+    	left: 5%;
+    	font-size: 25px;
+    	z-index: lightgray;
 }
 
 .card p{
-    position: absolute;
-    bottom: 3%;
-    left: 5%;
-    z-index: 1;
-    max-width: 300px;
-    color: grey;
-    font-size: 13px;
-    line-height: 20px;
+    	position: absolute;
+    	bottom: 3%;
+    	left: 5%;
+    	z-index: 1;
+    	max-width: 300px;
+    	color: grey;
+    	font-size: 13px;
+    	line-height: 20px;
 }
 
 .card video{
-    margin-top:10%;
-    width: 70%;
-    height: 50%;
-    object-fit: cover;
-    mix-blend-mode: lighten;
+    	margin-top:10%;
+    	width: 70%;
+    	height: 50%;
+    	object-fit: cover;
+    	mix-blend-mode: lighten;
 
 }
 
 .card button{
-   color:white;
+   	color:white;
 	padding: 10px 15px;
 	border-radius: 10px;
 	border: 2px solid #727fdeb4;
@@ -391,23 +390,23 @@ header ul a{
 	box-shadow: 0 0 5px #727fde84;
 	cursor: pointer;
 	transition: 0.3s;
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
+    	position: absolute;
+    	bottom: 5%;
+    	left: 5%;
 }
 .card button:hover{	
 	box-shadow: 0 0 15px #727fde86;
-    opacity: 0.7;
+    	opacity: 0.7;
 
 } 
 
 .card:hover{
-    box-shadow: 0 0 15px rgb(211, 211, 211, 0.5)
+    	box-shadow: 0 0 15px rgb(211, 211, 211, 0.5)
 }
 
 .card:nth-child(3){
-    grid-row: span 2;
-    height:83vh;
+    	grid-row: span 2;
+    	height:83vh;
 }
 
 .card:nth-child(3) p{
@@ -528,7 +527,7 @@ header ul a{
 
 .project-info button:hover{	
 	box-shadow: 0 0 15px #727fde86;
-    opacity: 0.7;
+    	opacity: 0.7;
 
 } 
 
@@ -599,10 +598,10 @@ header ul a{
 
 .mc{
 	 display: block;
-    font-weight: bold;
-    font-size: 1.3rem;
-    text-align: center;
-    width: 100%; 
+    	font-weight: bold;
+    	font-size: 1.3rem;
+    	text-align: center;
+    	width: 100%; 
 }
 
 .slink,
@@ -626,83 +625,86 @@ header ul a{
 		height: auto;
 	}
 }
-  .menu-icon{
-            font-size:30px;
-            cursor:pointer;
-            margin-left: -50%;
-        }
+.menu-icon{
+
+        font-size:30px;
+        cursor:pointer;
+        margin-left: -80%;
+
+}
 
  .sidebar{
-            position: fixed;
-            right:0;
-            top:0;
-            bottom:70%;
-            width:80%;
-            background-color: rgba(20, 20, 20, 0.411);
-            backdrop-filter: 10px;
-            z-index:999;
-            box-shadow: 0 0 20px rgba(red, green, blue, 0.411);
-            border-bottom-left-radius: 60%;
-            width:0;
-            opacity:0;
 
-        }
+        position: fixed;
+        right:0;
+        top:0;
+        bottom:70%;
+        width:80%;
+        background-color: rgba(20, 20, 20, 0.411);
+        backdrop-filter: 10px;
+        z-index:999;
+        box-shadow: 0 0 20px rgba(red, green, blue, 0.411);
+        border-bottom-left-radius: 60%;
+        width:0;
+        opacity:0;
+
+}
 
 .close-icon{
-  font-size: 30px;
-  color:lightgrey;
-  padding-left: 10px;
-  cursor: pointer;
-  margin-bottom:2rem;
-  padding-left: 40px;
-  margin-top:1em;
+  	font-size: 30px;
+  	color:lightgrey;
+  	padding-left: 10px;
+  	cursor: pointer;
+  	margin-bottom:2rem;
+  	padding-left: 40px;
+  	margin-top:1em;
 }
 .sidebar  li {
-  padding-left: 20px;
-   list-style: none;
- margin-bottom: 10px;
+  	padding-left: 20px;
+  	list-style: none;
+ 	margin-bottom: 10px;
 }
 
 .sidebar  li a{
-  padding-left: 20px;
-  text-decoration: none;
-  margin-bottom:50px;
-  color: lightgrey;
-  font-weight:700;
-  font-size: 20px;
-  text-shadow: 0 0 15px rgba(230, 230, 230, 0411)
+  	padding-left: 20px;
+  	text-decoration: none;
+  	margin-bottom:50px;
+  	color: lightgrey;
+  	font-weight:700;
+  	font-size: 20px;
+  	text-shadow: 0 0 15px rgba(230, 230, 230, 0411)
 }
 
 .sidebar.open-sidebar{
-  animation: openSidebarAnimation 1.5s forwards;
+  	animation: openSidebarAnimation 1.5s forwards;
 }
 
 @keyframes openSidebarAnimation {
-  to{
-    width:80%;
-    opacity:1;
-    bottom:0;
-    border-radius: 0em;
-  }
+  	to{
+    		width:80%;
+    		opacity:1;
+    		bottom:0;
+    		border-radius: 0em;
+	}
 }
 
 .sidebar.close-sidebar{
-  animation: closeSidebarAnimation 1.5s forwards;
+  	animation: closeSidebarAnimation 1.5s forwards;
 }
 
 @keyframes closeSidebarAnimation {
-  from{
-    width:80%;
-    opacity:1;
-    bottom:0;
-    border-radius: 0em;
-  }
-  to{
-    width:0;
-    opacity:0;
-    bottom:0;
-    border-bottom-left-radius: 50%;
-  }
+  	from{
+    		width:80%;
+    		opacity:1;
+    		bottom:0;
+    		border-radius: 0em;
+  	}
+  	to{
+    		width:0;
+    		opacity:0;
+    		bottom:0;
+    		border-bottom-left-radius: 50%;
+  	}
 }
 @media screen and (max-width: 1000px){
 	.hero h1{
@@ -737,168 +739,142 @@ header ul a{
 
 
 
- <video class="back-vid" loop autoplay muted   play-inline src="videos/psychology.mp4" type="video/mp4">
- </video>
+ 	<video class="back-vid" loop autoplay muted   play-inline src="videos/psychology.mp4" type="video/mp4">
+ 	</video>
  
- <header>
+ 	<header>
+  		<div class="left">  
+    			<img src="imagess/logo.png" alt="logo">
+    			<h1><span class="gradient">Just</span>Code</h1> 
+  		</div> 
+  		<div class="menu-icon">
+    			<span class="gradient">
+				<i class="bi bi-three-dots"></i>
+			</span>
+    		</div>
+ 	</header>
  
-  <div class="left">
-  
-    <img src="imagess/logonew.jpeg" alt="logo">
-    <h1><span style="color: #fdc200">Just</span>Code</h1> 
+
+	<div class="sidebar">
+        	<div class="close-icon">
+         		<span class="gradient"><i class="bi bi-x-square"></i></span>
+        	</div>
+
+ 		<li>
+       			<a   href= "https://const-be.github.io/JU5TBE/justbooks/selfhelp.html">
+    				SELF HELP 
+  			 </a> 
+   		</li>
+
+ 		<li>
+			<a  href="https://const-be.github.io/JU5TBE/justbooks/extra.html">
+     				EXTRA
+   			</a>
+   		</li>
+
+ 		<li>
+ 			<a  href="https://const-be.github.io/JU5TBE/justbooks/coding.html">
+    				CODING
+   			</a> 
+   		</li>
+
+   		<li>
+    			<a href="https://const-be.github.io/JU5TBE/justbooks/material.html">
+        			MATERIAL
+    			</a>
+    		</li>
+
+		<li>
+  			<a class= "sidebar_link" href="https://const-be.github.io/JU5TBE/justbooks/wisdom.html">
+    				GENERAL WISDOM
+   			</a> 
+     		</li>
+
+  		<li>
+ 			<a class= "sidebar_link" href="https://const-be.github.io/JU5TBE/justbooks/other.html">
+   				OTHER
+   			</a> 
     
-  </div> 
-  <div class="menu-icon">
-    <span class="gradient">MENU</span>
-    </div>
-  
-    
- 
- </header>
- 
+		</li>
 
-<div class="sidebar">
-        <div class="close-icon">
-         <span class="gradient">CLOSE</span>
-        </div>
- <li>
-       <a   href= "https://const-be.github.io/JU5TBE/justbooks/selfhelp.html">
-    SELF HELP 
-   </a> 
-   </li>
- <li>
-<a  href="https://const-be.github.io/JU5TBE/justbooks/extra.html">
-     EXTRA
-   </a>
-   </li>
- <li>
- <a  href="https://const-be.github.io/JU5TBE/justbooks/coding.html">
-    CODING
-   </a> 
-   </li>
-   <li>
-    <a href="https://const-be.github.io/JU5TBE/justbooks/material.html">
-        MATERIAL
-    </a>
-    </li>
-<li>
-  <a class= "sidebar_link" href="https://const-be.github.io/JU5TBE/justbooks/wisdom.html">
-    GENERAL WISDOM
-   </a> 
-     </li>
+      		<li>     
+    			<a class= "header_link"  href="https://const-be.github.io/JU5TBE/justbooks/philosophy.html "> 
+         			PHILOSOPHY
+    			</a>    
+    		</li>
 
-
-  <li>
- <a class= "sidebar_link" href="https://const-be.github.io/JU5TBE/justbooks/other.html">
-   OTHER
-   </a> 
-    
-</li>
-
+    		<li>
+    			<a  class= "header_link" href="https://const-be.github.io/JU5TBE/justbooks/psychology.html">
+       				PSYCHOLOGY
+   			</a>    
+   		</li>
      
+     		<li>
+    			<a class= "header_link" href="https://const-be.github.io/JU5TBE/justbooks/economics.html">
+       				ECONOMICS
+    			</a>    
+    		</li>
     
-      <li>     
-    <a class= "header_link"  href="https://const-be.github.io/JU5TBE/justbooks/philosophy.html ">
-             
-         PHILOSOPHY
-    </a>    
-    </li>
-
-    <li>
-    <a  class= "header_link" href="https://const-be.github.io/JU5TBE/justbooks/psychology.html">
-              
-       PSYCHOLOGY
-   </a>    
-    </li>
-     
-     <li>
-    <a class= "header_link" href="https://const-be.github.io/JU5TBE/justbooks/economics.html">
-       ECONOMICS
-    </a>    
-    </li>
-    
-      <li>
-    <div class= "header_catergories">
-     <a class= "header_link"  href="https://const-be.github.io/JU5TBE/justbooks/credits.html ">
-             
-       CREDIT
-    </a>   
-    </li>
+      		<li>
+    		<div class= "header_catergories">
+     			<a class= "header_link"  href="https://const-be.github.io/JU5TBE/justbooks/credits.html ">      
+       				CREDIT
+    			</a>   
+    		</li>
       
-    <li>
-      <a class= "header_link"  href="https://const-be.github.io/JU5TBE/siba .html ">
-             
-       SIBA
-    </a>             
-    </li>
+    		<li>
+      			<a class= "header_link"  href="https://const-be.github.io/JU5TBE/siba .html ">     
+       				SIBA
+    			</a>             
+    		</li>
   
     
-  </div>
+  	</div>
 
- <div class="blackhole-box">
- <video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
- </div>
- <section class="hero">
-   <div class="hero-info autoBlur">
+ 	<div class="blackhole-box">
+ 		<video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
+ 	</div>
+ 	<section class="hero">
+   		<div class="hero-info autoBlur">
+      			<h1>THE <span class="gradient">PROJECT    
+      				</span> <span class="gradient"></span>
+			</h1>
+      			<p>
+        			In this website you will find the main concepts of books I or any of the collaborators have read .You will also find free book links/audiobook links
+         			of said books and any other material I plan on encoding in the future as I continue to update the website.
+        			I will regularily be updating this website as I continue to improve it.
+        			With that being said please enjoy, and feel free to recommend this website to anyone you think might benefit from it
+        			( preferrably once it actually resembles a website \_(";)_/ ).TIP:this version is best used in laptops (phones have a skill issue)
+
+      			</p>
+      			<p>
+				<a class="slink" href="https://const-be.github.io/JU5TBE/project 1/Project.html">link to the og vanilla version of website</a>
+				<a class="slink" href="https://const-be.github.io/JU5TBE/justbooks1/home1.html">link to the okay version of the website</a>
+	  		</p>
      
-      
-      <h1>THE <span class="gradient">PROJECT    
-      </span> <span class="gradient">
-      </span></h1>
-      <p>
-        In this website you will find the main concepts of books I or any of the collaborators have read .You will also find free book links/audiobook links
-
-         of said books and any other material I plan on encoding in the future as I continue to update the website.
-
-        I will regularily be updating this website as I continue to improve it.
-
-        With that being said please enjoy, and feel free to recommend this website to anyone you think might benefit from it
-        ( preferrably once it actually resembles a website \_(";)_/ ).TIP:this version is best used in laptops (phones have a skill issue)
-
-      </p>
-      <p>
-		<a class="slink" href="https://const-be.github.io/JU5TBE/project 1/Project.html">link to the og vanilla version of website</a>
-		<a class="slink" href="https://const-be.github.io/JU5TBE/justbooks1/home1.html">link to the okay version of the website</a>
-		
-	  </p>
-     
-   </div>
-
-  
-
-  
- </section>
+   		</div>
+ 	</section>
  
  
- <section class="info-section">
+ 	<section class="info-section">
+ 		<h1 class="section-title autoDisplay">
+   			<span class="gradient">UPDATE BOARD</span>
+ 		</h1>
+ 		<div class="info-cards">
+  			<div class="card">
+   				<h1><span class="gradient">UPDATE 0.2.1</span></h1>
+				<p>	
+					UI OVERHAUL,
+      					ADITION OF NEW BOOKs
+   				</p>
+  			</div> 
+  		<div class="card">
+   			<h1><span class="gradient">POTENCIAL UPDATES</span></h1>
+   			<p>MORE AUDIOBOOKS</p>
+  		</div>
+ 	</section>
  
- <h1 class="section-title autoDisplay">
-   <span class="gradient">UPDATE BOARD</span>
- </h1>
- <div class="info-cards">
-
-  <div class="card">
-   <h1><span class="gradient">UPDATE 0.2.1</span></h1>
-   <p>UI OVERHAUL,
-      ADITION OF NEW BOOKs
-   </p>
-  
-  </div> 
-
-
-  
-  <div class="card">
-   <h1><span class="gradient">POTENCIAL UPDATES</span></h1>
-   <p>MORE AUDIOBOOKS</p>
-  
-
-
-  </div>
- 
-   
- </section>
- 
- </div>
- <script src="app.js"></script>
- </body>
-  </html>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
